@@ -1,0 +1,6 @@
+TextureRect
+SubViewport
+Sprite3D
+Sprite2D
+MeshInstance3D
+Camera3D

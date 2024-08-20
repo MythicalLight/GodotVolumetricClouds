@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://eyb7egmlj8ah"]
+
+[ext_resource type="Material" uid="uid://b41bq77y4axjy" path="res://CloudsMaterialRes.tres" id="1_bil4t"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_sy84d"]
+size = Vector2(2, 2)
+
+[node name="VClouds" type="Node3D"]
+
+[node name="CloudMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_sy84d")
+surface_material_override/0 = ExtResource("1_bil4t")

@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1724184426
+cheap_v_clouds_2_0.tscn::PackedScene::330418522969831043::1724184503::0::1::::<><>::uid://b41bq77y4axjy::::res://CloudsMaterialRes.tres
+CloudsMaterialRes.tres::ShaderMaterial::4475661991807015926::1724184478::0::1::::<><>::res://v_clouds_t_2.gdshader
+CloudsT1Noise.tres::NoiseTexture3D::6898657420564345216::1724181272::0::1::::<><>::
+icon.svg::CompressedTexture2D::2673478413704622741::1723993883::1723993893::1::::<><>::
+v_clouds_t_2.gdshader::Shader::-1::1724184503::0::1::::<><>::

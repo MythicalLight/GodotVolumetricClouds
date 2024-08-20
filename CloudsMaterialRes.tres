@@ -1,0 +1,36 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://b41bq77y4axjy"]
+
+[ext_resource type="Shader" path="res://v_clouds_t_2.gdshader" id="1_ux5ea"]
+
+[sub_resource type="Gradient" id="Gradient_wb65j"]
+offsets = PackedFloat32Array(0.307377, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_7hgfk"]
+noise_type = 2
+fractal_octaves = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0kqqn"]
+invert = true
+seamless = true
+seamless_blend_skirt = 0.336
+color_ramp = SubResource("Gradient_wb65j")
+noise = SubResource("FastNoiseLite_7hgfk")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ux5ea")
+shader_parameter/lightEnergMultipl = 2.0
+shader_parameter/Absorption = 1.0
+shader_parameter/BoundsMin = Vector3(-50, -5, -50)
+shader_parameter/BoundsMax = Vector3(50, 5, 50)
+shader_parameter/CloudTransparencyParam = 0.14
+shader_parameter/Scatter_g = 0.1
+shader_parameter/timeAffect = 10.0
+shader_parameter/FOV = 70.0
+shader_parameter/CloudNoiseTexture = SubResource("NoiseTexture2D_0kqqn")
+shader_parameter/SampleSteps = 30.0
+shader_parameter/AdjustStepColor = 0.37
+shader_parameter/WorldLightPosition = Vector3(0, 0, 0)
+shader_parameter/WorldLightDir = null
+shader_parameter/lightSteps = 2
+shader_parameter/lightColor = Color(1, 1, 1, 1)
